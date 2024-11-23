@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs-cz" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article class="content centrovany">
+    <header>
+        <h1> Nový pojištěnec </h1>
+    </header>
+    <section class="container mx-5">
+        <form method="post" th:object="${pojistenecDTO}" th:action="@{/pojistenci/novy}">
+            <div class="row">
+                <div class="col">
+                    <label for="jmeno">Jméno</label>
+                    <input th:field="*{jmeno}" class="form-control" placeholder="Jméno" id="jmeno">
+                    <small class="text-danger" th:errors="*{jmeno}"></small>
+                </div>
+                <div class="col">
+                    <label for="prijmeni">Příjmení</label>
+                    <input th:field="*{prijmeni}" class="form-control" placeholder="Příjmení" id="prijmeni">
+                    <small class="text-danger" th:errors="*{prijmeni}"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input th:field="*{email}" class="form-control" placeholder="vzor@vzor.cz" id="email">
+                    <small class="text-danger" th:errors="*{email}"></small>
+                </div>
+                <div class="col">
+                    <label for="telefon">Telefon</label>
+                    <input th:field="*{telefon}" class="form-control" placeholder="111222333" id="telefon">
+                    <small class="text-danger" th:errors="*{telefon}"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="ulice">Ulice a č.p.</label>
+                    <input th:field="*{ulice}" class="form-control" placeholder="Pražská 832" id="ulice">
+                    <small class="text-danger" th:errors="*{ulice}"></small>
+                </div>
+                <div class="col">
+                    <label for="mesto">Město</label>
+                    <input th:field="*{mesto}" class="form-control" placeholder="Praha" id="mesto">
+                    <small class="text-danger" th:errors="*{mesto}"></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <label for="psc">PSČ</label>
+                    <input th:field="*{psc}" class="form-control" placeholder="11100" id="psc">
+                    <small class="text-danger" th:errors="*{psc}"></small>
+                </div>
+            </div>
+            <button type="submit" class="tlacitko-ulozit">Uložit</button>
+        </form>
+    </section>
+</article>
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>

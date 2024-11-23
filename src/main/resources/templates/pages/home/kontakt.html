@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<div class="py-2 flash-message message-success" th:text="${success}" th:if="${success}"></div>
+
+<article class="content centrovany-formular">
+    <div class="form-container">
+        <h2>Kontaktujte nás</h2>
+        <form method="post" th:object="${kontaktDTO}" th:action="@{/kontakt}">
+
+            <label for="jmeno">Jméno</label>
+            <input th:field="*{jmeno}" type="text" id="jmeno" name="jmeno" required>
+            <small class="text-danger" th:errors="*{jmeno}"></small>
+
+            <label for="email">Email</label>
+            <input th:field="*{email}" type="email" id="email" name="email" required>
+            <small class="text-danger" th:errors="*{email}"></small>
+
+            <label for="zprava">Zpráva</label>
+            <textarea th:field="*{zprava}" id="zprava" name="zprava" rows="5" required></textarea>
+
+            <button class="tlacitko" type="submit">Odeslat</button>
+        </form>
+    </div>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>

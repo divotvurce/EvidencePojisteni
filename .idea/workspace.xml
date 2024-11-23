@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4ff9c00-b626-4e0f-93a8-3c54426f0834" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/configuration/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/KontaktController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/PojistenecController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/PojisteniController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/KontaktEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/PojistenecEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/PojisteniEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/KontaktRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/PojistenecRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/PojisteniRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/KontaktDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/PojistenecDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/PojisteniDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/mappers/PojistenecMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/mappers/PojisteniMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/exceptions/PojistenecNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/KontaktService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/KontaktServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojistenecService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojistenecServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojisteniService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojisteniServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/home/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/home/kontakt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/editovat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/novy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/pojistenci.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/editovat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/novy.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2oQF6Nkmm5Z5JY5AOIITNRAVaae" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/martinbosak/Dropbox/IntelliJProjectsCommunity/EvidencePojisteni",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="evidence.Main" />
+      <module name="SpringBlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="evidence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="EvidencePojisteni" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="EvidencePojisteni" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4ff9c00-b626-4e0f-93a8-3c54426f0834" name="Changes" comment="" />
+      <created>1730793716794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730793716794</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

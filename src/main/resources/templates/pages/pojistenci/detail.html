@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<div class="py-2 flash-message message-success" th:text="${success}" th:if="${success}"></div>
+
+<article class="content centrovany">
+    <div class="container-fluid text text-start">
+
+        <header>
+            <h1 class="odsadit" th:text="${pojistenec.jmeno} + ' ' + ${pojistenec.prijmeni}"></h1>
+        </header>
+
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <img class="avatar" th:src="@{/images/avatar.png}" alt="avatar"/>
+            </div>
+            <div class="col-sm-3 bg-light border text-uprostred">
+                <ul class="list-inline">
+                    <li th:text="${pojistenec.mesto}"></li>
+                    <li th:text="${pojistenec.ulice}"></li>
+                    <li th:text="${pojistenec.psc}"></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 bg-light border text-uprostred">
+                <ul class="list-unstyled">
+                    <li th:text="${pojistenec.email}"></li>
+                    <li th:text="${pojistenec.telefon}"> 278993093</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1> Sjednaná pojištění </h1>
+    </header>
+
+    <section class="container mx-5">
+        <table class="table table-bordered table responsive">
+            <thead>
+            <tr>
+                <th scope="col">Pojištění</th>
+                <th scope="col">Částka</th>
+                <th scope="col">Platné do</th>
+                <th scope="col">Akce</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="pojisteni : ${pojistenec.pojisteni}">
+                <input type="hidden" name="pojistenecId" th:value="${pojisteni.pojistenecId}">
+                <td th:text="${pojisteni.typ}"></td>
+                <td th:text="${pojisteni.castka}"></td>
+                <td th:text="${pojisteni.platnostDo}"></td>
+                <td>
+                    <form th:action="@{'/pojisteni/' + ${pojisteni.pojisteniId}}" method="POST"
+                          onsubmit="return confirm('Opravdu chcete odstranit pojištění?');">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="pojistenecId" th:value="${pojistenec.pojistenecId}"/>
+                        <button type="submit" class="tlacitko tlacitko-odstranit">Odstranit</button>
+                        <a th:href="@{'/pojisteni/editovat/' + ${pojisteni.pojisteniId}}"
+                           class="tlacitko tlacitko-editovat">Editovat</a></form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p class="centrovany">
+            <a th:href="@{'/pojisteni/novy/' + ${pojistenec.pojistenecId}}" class="tlacitko">Přidat pojištění</a> <a
+                th:href="@{'/pojistenci/editovat/' + ${pojistenec.pojistenecId}}" class="tlacitko tlacitko-editovat">Editovat
+            pojištěnce</a> <a th:href="@{'/pojistenci/delete/' + ${pojistenec.pojistenecId}}"
+                              class="tlacitko tlacitko-odstranit">Odstranit pojištěnce</a>
+        </p>
+
+    </section>
+</article>
+
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>

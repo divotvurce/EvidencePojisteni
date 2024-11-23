@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs-cz" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="~{fragments/layout.html :: head}"></head>
+<body>
+<header th:replace="~{fragments/layout.html :: header}"></header>
+
+<article class="content centrovany">
+    <header>
+        <h1> Editovat pojištění pro <span th:text="${pojistenec.jmeno} + ' ' + ${pojistenec.prijmeni}"></span></h1>
+    </header>
+    <section class="container mx-5">
+        <form method="post" th:object="${pojisteni}" th:action="@{'/pojisteni/editovat/' + ${pojisteni.pojisteniId}}">
+            <input type="hidden" th:field="*{pojistenecId}"/>
+
+            <div class="row">
+                <div>
+                    <label for="formular-select">Pojištění</label>
+                    <select class="form-select" id="formular-select" th:field="*{typ}">
+                        <option value="Domácnosti">Domácnosti</option>
+                        <option value="Auta">Auta</option>
+                        <option value="Životní pojištění">Životní pojištění</option>
+                        <option value="Na blbost">Na blbost</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="castka">Částka</label>
+                    <input type="text" class="form-control" placeholder="10000" id="castka" th:field="*{castka}">
+                </div>
+                <div class="col">
+                    <label for="predmet">Předmět pojištění</label>
+                    <input type="text" class="form-control" placeholder="byt" id="predmet" th:field="*{predmet}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="platnostOd">Platnost od</label>
+                    <input type="text" class="form-control" placeholder="1.1.2023" id="platnostOd"
+                           th:field="*{platnostOd}">
+                </div>
+                <div class="col">
+                    <label for="platnostDo">Platnost do</label>
+                    <input type="text" class="form-control" placeholder="2.1.2025" id="platnostDo"
+                           th:field="*{platnostDo}">
+                </div>
+            </div>
+            <button type="submit" class="tlacitko-ulozit">Uložit</button>
+        </form>
+    </section>
+
+</article>
+<footer th:replace="~{fragments/layout.html :: footer}"></footer>
+</body>
+</html>
