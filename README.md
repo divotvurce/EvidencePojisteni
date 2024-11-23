@@ -1,0 +1,2 @@
+# EvidencePojisteni
+Pokročilá varianta úkolu
