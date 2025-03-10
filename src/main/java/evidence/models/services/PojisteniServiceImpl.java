@@ -23,17 +23,14 @@ public class PojisteniServiceImpl implements PojisteniService {
 
     @Override
     public void create(PojisteniDTO pojisteniDTO) {
-        // Create a new PojisteniEntity using the PojisteniDTO
+
         PojisteniEntity newPojisteni = pojisteniMapper.toEntity(pojisteniDTO);
 
-        // Retrieve the PojistenecEntity by ID
         PojistenecEntity pojistenec = pojistenecRepository.findById(pojisteniDTO.getPojistenecId())
                 .orElseThrow(() -> new IllegalArgumentException("Invalid pojistenec ID: " + pojisteniDTO.getPojistenecId()));
 
-        // Set the PojistenecEntity in the new PojisteniEntity
         newPojisteni.setPojistenec(pojistenec);
 
-        // Save the new PojisteniEntity to the database
         pojisteniRepository.save(newPojisteni);
     }
 

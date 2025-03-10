@@ -27,7 +27,7 @@
             <div class="col-sm-3 bg-light border text-uprostred">
                 <ul class="list-unstyled">
                     <li th:text="${pojistenec.email}"></li>
-                    <li th:text="${pojistenec.telefon}"> 278993093</li>
+                    <li th:text="${pojistenec.telefon}"></li>
                 </ul>
             </div>
         </div>
@@ -58,19 +58,23 @@
                           onsubmit="return confirm('Opravdu chcete odstranit pojištění?');">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="pojistenecId" th:value="${pojistenec.pojistenecId}"/>
-                        <button type="submit" class="tlacitko tlacitko-odstranit">Odstranit</button>
+                        <button type="submit" class="tlacitko odstranit">Odstranit</button>
                         <a th:href="@{'/pojisteni/editovat/' + ${pojisteni.pojisteniId}}"
-                           class="tlacitko tlacitko-editovat">Editovat</a></form>
+                           class="tlacitko editovat">Editovat</a></form>
                 </td>
             </tr>
             </tbody>
         </table>
-        <p class="centrovany">
+        <div class="mx-5">
+        <form th:action="@{'/pojistenci/' + ${pojistenec.pojistenecId}}" method="POST"
+              onsubmit="return confirm('Opravdu chcete odstranit pojištěnce?');">
             <a th:href="@{'/pojisteni/novy/' + ${pojistenec.pojistenecId}}" class="tlacitko">Přidat pojištění</a> <a
-                th:href="@{'/pojistenci/editovat/' + ${pojistenec.pojistenecId}}" class="tlacitko tlacitko-editovat">Editovat
-            pojištěnce</a> <a th:href="@{'/pojistenci/delete/' + ${pojistenec.pojistenecId}}"
-                              class="tlacitko tlacitko-odstranit">Odstranit pojištěnce</a>
-        </p>
+                th:href="@{'/pojistenci/editovat/' + ${pojistenec.pojistenecId}}" class="tlacitko editovat">Editovat
+            pojištěnce</a>
+        <input type="hidden" name="_method" value="DELETE">
+        <button type="submit" class="tlacitko odstranit">Odstranit</button>
+        </form>
+        </div>
 
     </section>
 </article>

@@ -4,50 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4ff9c00-b626-4e0f-93a8-3c54426f0834" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/configuration/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/KontaktController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/PojistenecController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/PojisteniController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/KontaktEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/PojistenecEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/PojisteniEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/KontaktRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/PojistenecRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/PojisteniRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/KontaktDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/PojistenecDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/PojisteniDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/mappers/PojistenecMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/mappers/PojisteniMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/exceptions/PojistenecNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/KontaktService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/KontaktServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojistenecService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojistenecServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojisteniService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/services/PojisteniServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/home/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/home/kontakt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/editovat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/novy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/pojistenci.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/editovat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/novy.html" afterDir="false" />
+    <list default="true" id="c4ff9c00-b626-4e0f-93a8-3c54426f0834" name="Changes" comment="nahrani na git">
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/configuration/AppSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/UcetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/UzivatelEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/data/repositories/UzivatelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/evidence/models/dto/UzivatelDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/ucet/prihlaseni.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/ucet/registrace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/evidence/controllers/PojisteniController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/evidence/controllers/PojisteniController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/evidence/data/entities/PojistenecEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/evidence/data/entities/PojistenecEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/editovat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/editovat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/novy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/novy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/pojistenci.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci/pojistenci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/editovat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/editovat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/novy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/pojisteni/novy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;divotvurce&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/divotvurce/EvidencePojisteni&quot;,
+    &quot;accountId&quot;: &quot;d3f986f5-d51e-4f6d-98df-bffe879d7049&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -77,18 +64,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/martinbosak/Dropbox/IntelliJProjectsCommunity/EvidencePojisteni",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/martinbosak/Dropbox/IntelliJProjectsCommunity/EvidencePojisteni&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates/pages/pojistenci" />
@@ -136,9 +123,31 @@
       <option name="presentableId" value="Default" />
       <updated>1730793716794</updated>
     </task>
+    <task id="LOCAL-00001" summary="nahrani na git">
+      <option name="closed" value="true" />
+      <created>1732375919016</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732375919016</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="nahrani na git" />
+    <option name="LAST_COMMIT_MESSAGE" value="nahrani na git" />
   </component>
 </project>

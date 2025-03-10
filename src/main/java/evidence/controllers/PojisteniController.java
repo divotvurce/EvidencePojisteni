@@ -35,7 +35,7 @@ public class PojisteniController {
         PojisteniDTO pojisteni = new PojisteniDTO();
         pojisteni.setPojistenecId(pojistenecId);  // Set pojistenecId on the DTO
         model.addAttribute("pojisteni", pojisteni);
-        model.addAttribute("pojistenec", pojistenecService.getById(pojistenecId));  // Fetch Pojistenec details to display name in the view
+        model.addAttribute("pojistenec", pojistenecService.getById(pojistenecId));
         return "pages/pojisteni/novy";
     }
 
@@ -48,17 +48,17 @@ public class PojisteniController {
             RedirectAttributes redirectAttributes
     ) {
         if (result.hasErrors()) {
-            // When there are validation errors, re-render the form with the error messages
+
             model.addAttribute("pojistenec", pojistenecService.getById(pojistenecId));
-            return "pages/pojisteni/novy";  // Return the view with errors
+            return "pages/pojisteni/novy";
         }
 
 
-        pojisteni.setPojistenecId(pojistenecId);  // Ensure pojistenecId is set on DTO
+        pojisteni.setPojistenecId(pojistenecId);
         pojisteniService.create(pojisteni);
         redirectAttributes.addFlashAttribute("success", "Pojištění bylo úspěšně vytvořeno.");
 
-        return "redirect:/pojistenci/" + pojistenecId;  // Redirect to the specific Pojistenec's detail page
+        return "redirect:/pojistenci/" + pojistenecId;
     }
 
     @GetMapping("/editovat/{pojisteniId}")
@@ -67,12 +67,12 @@ public class PojisteniController {
             PojisteniDTO pojisteni,
             Model model
     ) {
-        // Fetch the existing insurance details
+
         PojisteniDTO fetchedPojisteni = pojisteniService.getById(pojisteniId);
         pojisteniMapper.updatePojisteniDTO(fetchedPojisteni, pojisteni);
 
 
-        // Add the insurance details and related information to the model
+
         model.addAttribute("pojisteni", fetchedPojisteni);
         model.addAttribute("pojistenec", pojistenecService.getById(fetchedPojisteni.getPojistenecId()));
 

@@ -34,9 +34,9 @@
                     <form th:action="@{'/pojistenci/' + ${pojistenec.pojistenecId}}" method="POST"
                           onsubmit="return confirm('Opravdu chcete odstranit pojištěnce?');">
                         <input type="hidden" name="_method" value="DELETE">
-                        <button type="submit" class="tlacitko tlacitko-odstranit">Odstranit</button>
+                        <button type="submit" class="tlacitko odstranit">Odstranit</button>
                         <a th:href="@{'/pojistenci/editovat/' + ${pojistenec.pojistenecId}}"
-                           class="tlacitko tlacitko-editovat">Editovat</a></form>
+                           class="tlacitko editovat">Editovat</a></form>
                 </td>
             </tr>
         </table>

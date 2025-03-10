@@ -37,7 +37,6 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>3.0.2</version>
         </dependency>
-        <!-- Odkaz na implementaci JDBC (ovladače k databázi) -->
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
@@ -52,7 +51,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
             <version>3.0.2</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>

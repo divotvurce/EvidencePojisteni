@@ -33,7 +33,7 @@ public class PojistenecEntity {
     @Column(nullable = false)
     private String psc;
 
-    @OneToMany(mappedBy = "pojistenec", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "pojistenec", cascade = CascadeType.ALL)
     private List<PojisteniEntity> pojisteni = new ArrayList<>();
 
     public long getPojistenecId() {
